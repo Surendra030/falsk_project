@@ -11,26 +11,23 @@
 </head>
 
 <body>
-    <div class="area">
-        <div class="circles">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+    <div class="container">
+        <h1>Merge Your PDFs</h1>
+        <form id="pdfForm">
+            <label for="pdf1">Choose the first PDF:</label>
+            <input type="file" id="pdf1" name="pdf1" accept="application/pdf" required>
+
+            <label for="pdf2">Choose the second PDF:</label>
+            <input type="file" id="pdf2" name="pdf2" accept="application/pdf" required>
+
+            <button type="submit">Merge PDFs</button>
+        </form>
+
+        <!-- Download button initially hidden -->
+        <button id="downloadBtn" style="display: none;">Download Merged PDF</button>
+        <div id="response"></div>
     </div>
-    <div class="context">
-        <h1>Coding Craft YT</h1>
-        <h3>Taking Your Flask Project Beyond Localhost!</h3>
-    </div>
+    <link rel="stylesheet" href="/static/js/script.js">
 </body>
 
 </html>
