@@ -1,22 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 
 .container {
     background: white;
+    font-size: 1.5em;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 400px;
+    width: 500px;
+    position: relative;
+    left: 40%;
+    top: 20vh;
     text-align: center;
+    background-color: #3bcaf9;
 }
+
+.icon {
+    font-size: 40px; /* Adjust the size as needed */
+    display: inline-block;
+    vertical-align: middle; /* Optional: Align with text */
+}
+
 
 h1 {
     color: #333;
@@ -84,3 +87,34 @@ button#downloadBtn:enabled {
     background-color: green; /* Ready state */
     color: white;
 }
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Exo', sans-serif;
+}
+
